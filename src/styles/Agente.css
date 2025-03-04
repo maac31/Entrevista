@@ -1,0 +1,122 @@
+/* Contenedor principal */
+.agente-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #4c3358; /* color1 */
+    margin-bottom: 20px;
+}
+
+/* Secciones de preguntas */
+.pregunta-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(76, 51, 88, 0.1); /* color1 con transparencia */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos de preguntas */
+h2 {
+    font-size: 1.5em;
+    color: #b2597e; /* color3 */
+    border-bottom: 2px solid #f6b8a3; /* color5 */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Opciones de respuesta */
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Cambios al pasar el mouse */
+.opcion:hover {
+    transform: scale(1.02);
+    background: rgba(179, 89, 126, 0.2);
+}
+
+/* Colores para respuestas correctas e incorrectas */
+.opcion.correcta {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.opcion.incorrecta {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+/* Botón */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4c3358; /* color1 */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #b2597e; /* color3 */
+}
+
+/* Resultados */
+.resultados {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para respuestas correctas e incorrectas */
+.correcto {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.incorrecto {
+    color: #dc3545;
+    font-weight: bold;
+}

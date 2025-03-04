@@ -1,0 +1,102 @@
+/* Contenedor principal */
+.inicio-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 2em;
+  color: #4c3358; /* color1 */
+  margin-bottom: 20px;
+}
+
+/* Subtítulos */
+.subtitulo {
+  font-size: 1.8em;
+  color: #b2597e; /* color3 */
+  margin-top: 30px;
+  border-bottom: 2px solid #f6b8a3; /* color5 */
+  padding-bottom: 5px;
+}
+
+/* Párrafos */
+p {
+  color: #734266; /* color2 */
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Contenedor de equipo */
+.equipo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Tarjetas de presentación */
+.tarjeta {
+  background: rgba(76, 51, 88, 0.1); /* color1 con transparencia */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  background: rgba(179, 89, 126, 0.2); /* color3 con más transparencia */
+}
+
+/* Tarjeta especial para Miguel */
+.tarjeta-especial {
+  background: linear-gradient(180deg, #b2597e, #f38597); /* color3 y color4 */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para roles */
+.rol {
+  font-weight: bold;
+  color: #b2597e; /* color3 */
+}
+
+/* Estilo para descripciones */
+.descripcion {
+  font-size: 0.9em;
+  color: #734266; /* color2 */
+  margin-top: 5px;
+}
+
+/* Efecto de entrada */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.equipo-container .tarjeta {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+/* Ajuste para no interferir con el footer */
+.footer {
+  margin-top: 40px;
+}

@@ -1,0 +1,67 @@
+/* Contenedor principal */
+.contacto-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #4c3358; /* color1 */
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+section {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(76, 51, 88, 0.1); /* color1 con transparencia */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos de secciones */
+h2 {
+    font-size: 1.5em;
+    color: #b2597e; /* color3 */
+    border-bottom: 2px solid #f6b8a3; /* color5 */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Texto y listas */
+p, ul {
+    color: #734266; /* color2 */
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Efecto al pasar el mouse */
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    background: rgba(179, 89, 126, 0.2); /* color3 con más transparencia */
+}

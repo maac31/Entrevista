@@ -1,0 +1,101 @@
+.camionero-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #4c3358; /* Color principal */
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(76, 51, 88, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #b2597e;
+    margin-bottom: 10px;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background: rgba(179, 89, 126, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.opcion:hover {
+    background: rgba(179, 89, 126, 0.4);
+}
+
+.opcion input {
+    margin-right: 10px;
+}
+
+.letra {
+    font-weight: bold;
+    color: #4c3358;
+}
+
+.seleccionada {
+    background: rgba(76, 51, 88, 0.3);
+    font-weight: bold;
+}
+
+.respuesta-correcta {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.correcta {
+    color: green;
+}
+
+.incorrecta {
+    color: red;
+}
+
+.boton-verificar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    background: #4c3358;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton-verificar:hover {
+    background: #b2597e;
+}
